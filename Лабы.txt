@@ -1,0 +1,47 @@
+let name = "John";
+let admin = name;
+alert(admin);
+
+
+
+let a = +prompt("Первое число?", 1);
+let b = +prompt("Второе число?", 2);
+
+alert(a + b); // Теперь выводит 3, надо было поставить "+" перед prompt
+
+
+
+for (let i = 0; i <= 10; i++)
+    {
+        if (i%2==0) alert(i); //Либо i можно сделать с шагом +2
+    }
+
+
+
+let i = 0;
+while (i<3)
+    {
+        alert(`number ${i}!`);
+        i++
+    }
+
+
+
+let num = +prompt("Введите число");
+while (num < 100)
+    {
+        num = +prompt("Введите число");
+    }
+
+
+
+let num = 10;
+nextNum:
+for (let i = 2; i <= n; i++)
+{
+  for (let j = 2; j < i; j++)    
+  {
+    if (i % j == 0) continue nextNum; // Ес не подходит, то берём следующее, юзая метку
+  }
+  alert( i );
+}
